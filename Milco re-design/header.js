@@ -9,7 +9,7 @@ class Header extends HTMLElement {
     
     <div>
         <a href="index.html">
-            <img src="logo.jpg" class="logo"/>
+            <img src="logo.png" class="logo"/>
         </a>
     </div>
 

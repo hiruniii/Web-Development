@@ -1,45 +1,65 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  
+  /* background:
+  linear-gradient(white, #cb2427, white),
+  linear-gradient(to top left, #ffffff, transparent),
+  linear-gradient(to top right, transparent, #d8973c);
+background-blend-mode: screen; */
+  
 }
 
-.navbar-light{
-    background-color: #ed2024;
-    height: 80px;
-    border-radius: 8px;
-    width:100%;
-    vertical-align: middle;
-    margin:1rem 1rem 1rem 1rem;
+.navbar-light {
+  background-color: transparent;  
+  height: 80px;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0.3rem 0.3rem 1rem 1rem;
+  /* position: fixed; */
+  /* top: 0; */
 }
 
-.navbar-dark{
-    background-color: #cb2427;
-    height: 80px;
-    width:100%;
-    vertical-align: middle;
-    position: fixed;
-    bottom: 0;
-    margin:0;
-    
+.navbar-dark {
+  background: transparent;
+  height: 80px;
+  width: 100%;
+  vertical-align: middle;
+  /* position: fixed;
+    bottom: 0; */
+  margin: 0;
 }
 
 .navbar-ul {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
-ul>li{
-    list-style: none;
-    font: rgb(249, 249, 240);
+ul > li {
+  list-style: none;
 }
 
 .nav-link{
-    text-decoration: none;
-    color: antiquewhite;
-    margin:0rem 1rem 0rem 0rem;
+  text-decoration: none;
+  color: #ed2024;
+  margin: 0rem 1rem 0rem 0rem;
+  font-weight:600;
+}
+
+.nav-link:hover {
+  opacity: 0.5;
 }
 
 .container {
-	max-width: 1200px;
-	margin: 0 auto;
+  max-width: 1200px;
+  margin: 1rem 3rem 3rem 3rem;
+}
+
+.card {
+  margin-top: 5rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  border-radius: 8px;
+  padding: 1rem;
+  max-width: 50rem;
 }
