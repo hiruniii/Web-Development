@@ -1,7 +1,6 @@
 body {
   font-family: 'Nunito', sans-serif;
   margin: 0;
-  
   /* background:
   linear-gradient(white, #cb2427, white),
   linear-gradient(to top left, #ffffff, transparent),
@@ -20,14 +19,29 @@ background-blend-mode: screen; */
   /* top: 0; */
 }
 
-.navbar-dark {
+.footer {
   background: transparent;
-  height: 80px;
+  height: fit-content;
   width: 100%;
-  vertical-align: middle;
-  /* position: fixed;
-    bottom: 0; */
-  margin: 0;
+  display: inline-grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: 3rem 0 1rem 0;
+}
+
+.footer-icon{
+  width: 24px;
+  height: 24px;
+}
+
+.contact{
+  text-align: left;
+  font-size: small;
+}
+
+.contact>table{
+  margin-top:1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
 }
 
 .navbar-ul {
@@ -51,8 +65,8 @@ ul > li {
 }
 
 .container {
-  max-width: 1200px;
-  margin: 1rem 3rem 3rem 3rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .card {
@@ -61,5 +75,5 @@ ul > li {
     rgba(17, 17, 26, 0.05) 0px 8px 32px;
   border-radius: 8px;
   padding: 1rem;
-  max-width: 50rem;
+  width: 50rem;
 }
