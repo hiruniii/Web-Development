@@ -21,11 +21,13 @@ background-blend-mode: screen; */
 
 .footer {
   background: transparent;
-  height: fit-content;
+  /* height: fit-content; */
   width: 100%;
   display: inline-grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2rem;
   margin: 3rem 0 1rem 0;
+  font-size: small;
 }
 
 .footer-icon{
@@ -34,14 +36,27 @@ background-blend-mode: screen; */
 }
 
 .contact{
-  text-align: left;
-  font-size: small;
+  text-align: left;  
 }
 
 .contact>table{
   margin-top:1rem;
   display: grid;
   grid-template-columns: 1fr 1fr; 
+}
+
+.bottom-nav{
+  inset-inline-start: 5rem;
+  position: relative;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bottom-nav>div>a{
+  text-decoration: none;
+  color:black;
 }
 
 .navbar-ul {
