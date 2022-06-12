@@ -117,9 +117,12 @@ ul > li {
   color:  var(--hblue);
   background-color: transparent;
   border: var(--hblue) 1px solid;
+  border-radius: 0.2rem;
   line-height: 1;
 }
 
 .btn:hover{
   cursor: pointer;
+  color: white;
+  background-color: var(--hblue);;
 }

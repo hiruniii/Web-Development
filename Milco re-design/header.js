@@ -72,6 +72,15 @@ class Footer extends HTMLElement{
 
         <tr>
           <td>
+              <a target="_blank" href="https://twitter.com/HighlandLK">
+                <img src="./images/icons/icons8-twitter.png" />
+              </a>
+          </td>
+          <td>@HighlandLK</td>
+        </tr>
+
+        <tr>
+          <td>
             <a href="mailto:info@milco.lk">
               <img src="./images/icons/icons8-mail.png" class="footer-icon" />
             </a>
