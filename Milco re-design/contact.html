@@ -12,15 +12,150 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet" />
 
     <script src="header.js" type="text/javascript" defer></script>
+    <style>
+        .contact-grid {
+            display: inline-grid;
+            padding: 1rem;
+
+            overflow: hidden;
+        }
+
+        label {
+            padding-right: 2rem;
+            flex: 15%;
+        }
+
+        .ctrl {
+            flex: 85%;
+            max-width: 20rem;
+        }
+
+        .container {
+            width: 50%;
+        }
+
+        /* ---------------------------------------------- */
+
+        .banner {
+            position: relative;
+            width: 32rem;
+            height: 27rem;
+        }
+
+        .banner ul.kf-slider {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .banner ul.kf-slider li {
+            width: 32rem;
+            height: 27rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+
+            animation: fade-out 40s infinite;
+            background-image: url('./images/sterilized.jpg');
+            background-size: cover;
+        }
+
+        .banner ul.kf-slider li:nth-child(2) {
+            background-image: url('./images/ice-cream.jpg');
+            background-size: cover;
+            animation-delay: 8s;
+        }
+
+        .banner ul.kf-slider li:nth-child(3) {
+            background-image: url('./images/milk.jpg');
+            background-size: cover;
+            animation-delay: 16s;
+        }
+
+        .banner ul.kf-slider li:nth-child(4) {
+            background-image: url('./images/yoghurt.jpg');
+            background-size: cover;
+            animation-delay: 24s;
+        }
+
+        .banner ul.kf-slider li:nth-child(5) {
+            background-image: url('./images/choc-sterilized.jpg');
+            background-size: cover;
+            animation-delay: 32s;
+        }
+
+        @keyframes fade-out {
+            0% {
+                opacity: 0;
+            }
+
+            8.333% {
+                opacity: 1
+            }
+
+            33.333% {
+                opacity: 1
+            }
+
+            41.666% {
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div>
         <header-component></header-component>
     </div>
-    Contact
+
+    <div style="display: flex">
+        <!-- Form -->
+        <div class="container">
+            <form class="contact-grid">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="name" name="name" id="name" class="ctrl" />
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="ctrl" />
+                </div>
+                <div class="field">
+                    <label for="telephone">Telephone</label>
+                    <input type="telephone" name="telephone" id="telephone" class="ctrl" />
+                </div>
+                <div class="field">
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" id="comments" rows="5" class="ctrl"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn" style="margin-right: 2rem">
+                        Send
+                    </button>
+                    <button type="reset" class="btn">Clear</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Image box -->
+        <div class="container" style="margin-left:4rem;">
+            <section class="banner">
+                <ul class="kf-slider">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
     <div>
         <footer-component></footer-component>
     </div>
 </body>
-<html>
+
+</html>

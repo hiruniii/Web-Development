@@ -1,3 +1,8 @@
+:root{
+  --muted:#dddddd;
+  --hblue:#1b3d96;
+}
+
 body {
   font-family: 'Nunito', sans-serif;
   margin: 0;
@@ -42,7 +47,7 @@ background-blend-mode: screen; */
 .contact>table{
   margin-top:1rem;
   display: grid;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 1fr; 
 }
 
 .bottom-nav{
@@ -82,6 +87,7 @@ ul > li {
 .container {
   display: flex;
   flex-direction: column;
+  margin: 1rem;
 }
 
 .card {
@@ -91,4 +97,29 @@ ul > li {
   border-radius: 8px;
   padding: 1rem;
   width: 50rem;
+}
+
+.field{
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.ctrl{
+  border:var(--muted) 1px solid;
+  border-radius: 0.2rem;
+  background: #fafafa;
+  font-size: 1rem;
+}
+
+.btn{
+  padding:0.5rem;
+  color:  var(--hblue);
+  background-color: transparent;
+  border: var(--hblue) 1px solid;
+  line-height: 1;
+}
+
+.btn:hover{
+  cursor: pointer;
 }

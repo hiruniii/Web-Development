@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet" />
 
   <script src="header.js" type="text/javascript" defer></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <style>
     .card {
       max-height: 10rem;
@@ -35,6 +35,11 @@
       align-items: center;
       width: 100%;
     }
+
+    .hideContent{
+      overflow: hidden;
+      max-height: 10rem;
+    }
   </style>
 </head>
 
@@ -48,17 +53,17 @@
     <div class="container" style="margin-left: 2rem">
       <div class="card">
         <h2>Vision</h2>
-        <p>
+        <p class="hideContent" >
           To be the “ Best in Class ” nutritious food and beverage company in
           Sri Lanka.
         </p>
 
-        <span>more+</span>
+        <span class="showLink">more+</span>
       </div>
 
       <div class="card">
         <h2>Mission</h2>
-        <p>
+        <p  class="hideContent" >
           To be a proactive partner in achieving the targeted growth in fresh
           milk production while strengthening the local dairy farmer. Modern
           technology supported with continuous improvement initiatives to be
@@ -70,7 +75,7 @@
 
       <div class="card">
         <h2>History</h2>
-        <p>
+        <p class="hideContent" >
           This institution was established in 1956 as “The National Milk
           Board” under the purview of the Ministry of Agriculture. It
           commenced operations with a single Factory in Colombo commissioned
@@ -92,7 +97,7 @@
       <div class="card">
         <h2>Our products</h2>
 
-        <p>
+        <p class="hideContent" >
           The National Milk Board which was formed government agency involved
           in dairy development, milk collection, milk processing and marketing
           since 1956 to 1986. In 1986, it was converted into Milk Industries
@@ -148,26 +153,46 @@
     </div>
   </div>
 
-  <div><footer-component></footer-component></div>
+  <div>
+    <footer-component></footer-component>
+  </div>
 
   <script>
-        // var cards = document.getElementsByClassName("card");
-      //   Object.keys(cards).forEach(function (key) {
-      //     var span = cards[key].getElementsByTagName("span")[0];
-      //     if (cards[key].scrollHeight < cards[key].clientHeight) {
-      //       (cards[key]).next().find(".showLink").hide();
-      //     }
-      //   });
+    // var cards = document.getElementsByClassName("card");
+    //   Object.keys(cards).forEach(function (key) {
+    //     var span = cards[key].getElementsByTagName("span")[0];
+    //     if (cards[key].scrollHeight < cards[key].clientHeight) {
+    //       (cards[key]).next().find(".showLink").hide();
+    //     }
+    //   });
 
 
 
-      // var hist = document.getElementsByClassName('card')[2];
-      // var total = console.log(hist.scrollHeight);
-      // var visible = console.log(hist.offsetHeight);
-      // if(total>visible-16){
-      //   document.write("hi");
-      // }
-      
+    // var hist = document.getElementsByClassName('card')[2];
+    // var total = console.log(hist.scrollHeight);
+    // var visible = console.log(hist.offsetHeight);
+    // if(total>visible-16){
+    //   document.write("hi");
+    // }
+
+
+    $(document).ready(function () {
+      var getElements = document.querySelectorAll('.hideContent');
+
+      Array.from(getElements).forEach(function (element) {
+        
+        if (element.offsetHeight <= element.scrollHeight) {
+          console.log("good");
+        } else {
+          console.log("long");
+          //$(element).next().find(".showLink").hide();
+          // var link = element.getElementsByClassName('showLink');
+          // console.log(link);
+        }
+      });
+
+    });
+
   </script>
 </body>
 
