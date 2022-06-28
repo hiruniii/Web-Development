@@ -55,7 +55,7 @@
             top: 0;
             left: 0;
             opacity: 0;
-
+            border-radius: 8px;;
             animation: fade-out 40s infinite;
             background-image: url('./images/sterilized.jpg');
             background-size: cover;
@@ -113,7 +113,7 @@
     <div style="display: flex">
         <!-- Form -->
         <div class="container">
-            <form class="contact-grid">
+            <form class="contact-grid" style="height:27rem;">
                 <div class="field">
                     <label for="name">Name</label>
                     <input type="name" name="name" id="name" class="ctrl" />
@@ -130,7 +130,7 @@
                     <label for="comments">Comments</label>
                     <textarea name="comments" id="comments" rows="5" class="ctrl"></textarea>
                 </div>
-                <div>
+                <div style="float:bottom">
                     <button type="submit" class="btn" style="margin-right: 2rem">
                         Send
                     </button>

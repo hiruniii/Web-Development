@@ -19,9 +19,21 @@ class Header extends HTMLElement {
                 <li>
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
+
                 <li>
-                    <a class="nav-link" href="products.html">Our Products</a>
+                  <a class="nav-link prod-link" href="products.html">
+                    Our Products
+                  </a>
+
+                  <ul class="prod-dropdown">               
+                    <li>Highland Pasteurized Milk</li>
+                    <li>Highland Sterilized Milk</li>
+                    <li>Highland Yoghurt</li>
+                    <li>Highland Curd</li>
+                    <li>Highland Butter</li>
+                  </ul>
                 </li>
+
                 <li>
                     <a class="nav-link" href="factories.html">Factories</a>
                 </li>
@@ -39,7 +51,7 @@ class Header extends HTMLElement {
   }
 }
 
-class Footer extends HTMLElement{
+class Footer extends HTMLElement {
   constructor() {
     super();
   }
