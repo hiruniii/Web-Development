@@ -91,6 +91,22 @@ body {
   width: 50rem;
 }
 
+.home-cards{
+  animation: slideUp 1s ease-in-out;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(90px)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
 .field {
   margin-bottom: 2rem;
   display: flex;
@@ -126,9 +142,13 @@ body {
   display: none;
   background-color: transparent;
   animation: slideDown 1s ease-in-out;
+  animation-fill-mode: forwards;
   padding: 0;
-  background:#ffffff;
+  background:white;
   justify-self: center;
+  border: 0.5px solid rgb(209, 209, 209);
+  border-top: none;
+  border-radius: 0 0 10px 10px ;
 }
 
 .prod-dropdown li {
@@ -148,18 +168,19 @@ body {
   }
 }
 
-.prod-link:hover+.prod-dropdown {
-  display: block;background:#fafafa
+.prod-link:hover +.prod-dropdown {
+  display: block;
 }
 
-.prod-link:hover+.prod-dropdown li {
+.prod-link:hover +.prod-dropdown li {
   display: block;
 }
 
 .prod-dropdown:hover {
-  display: block;background:#fafafa
+  display: block;
 }
 
 .prod-dropdown li:hover {
   cursor: pointer;
+  display: block;
 }
