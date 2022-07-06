@@ -25,7 +25,7 @@ class Header extends HTMLElement {
                     Our Products
                   </a>
 
-                  <ul class="prod-dropdown">               
+                  <ul class="prod-dropdown">         
                     <li>Highland Pasteurized Milk</li>
                     <li>Highland Sterilized Milk</li>
                     <li>Highland Yoghurt</li>

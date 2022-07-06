@@ -88,11 +88,11 @@ body {
     rgba(17, 17, 26, 0.05) 0px 8px 32px;
   border-radius: 8px;
   padding: 1rem;
-  width: 50rem;
 }
 
 .home-cards{
   animation: slideUp 1s ease-in-out;
+  width: 50rem;
 }
 
 @keyframes slideUp {
@@ -183,4 +183,86 @@ body {
 .prod-dropdown li:hover {
   cursor: pointer;
   display: block;
+}
+
+.jug {
+  border: 0.1rem solid rgb(154, 147, 147);
+  border-top: none;
+  border-radius: 0 0 5rem 5rem;
+  width: 1.5rem;
+  height: 2rem;
+  box-sizing: border-box;
+  animation-name: pour;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  overflow: hidden;
+}
+
+.milk-limit {
+  position: absolute;
+  top: 0.2rem;
+  width:3rem;
+  height: 4rem;
+  border-top:1px solid rgb(154, 147, 147);
+  animation-name: tip;
+  animation-duration: 2s;    
+  background-color: rgb(247, 246, 215);
+}
+
+@keyframes pour {
+  100% {
+      transform: rotate(25deg);
+  }
+}
+
+@keyframes tip {
+  100% {
+      transform: rotate(-25deg);
+  }
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap:2rem;
+  column-gap: 4rem;
+  place-items: center;
+  align-content: center;
+  column-gap: 2rem;
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
+}
+
+.product-name{
+  grid-column: 2 / span 2;
+  font-weight: bold;
+  align-self: center;
+  justify-self: center;
+  margin-right: 4rem;
+}
+
+.product-price{
+  grid-column-start: 4;
+  align-self: center;
+  justify-self: left;
+}
+
+.product-desc{
+  grid-column: 1 / span 2;
+  grid-row-start:2;
+  align-self: end;
+  margin-right: 3rem;
+  font-size: small;
+}
+
+.pack-desc{
+  grid-row-start: 2 ;
+  grid-column: 3 / span 2;
+  justify-self: right;
+  font-size: small;
+  align-self: end;
 }
