@@ -59,9 +59,13 @@ class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <footer class="footer">
-    <div style="text-align:center;margin-top: 1rem;align-self:flex-end;">
-      © 2006 Milco Private Limited. All Rights Reserved © 2008
-    </div>
+    
+    <iframe 
+      class="footer-map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9786785520496!2d79.87855071744384!3d6.893153500000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25a2eaf1a7e77%3A0x6fd1e37320977406!2sMILCO%20Private%20Limited!5e0!3m2!1sen!2slk!4v1657886256092!5m2!1sen!2slk"  
+      allowfullscreen="" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
 
     <div class="bottom-nav">
       <div><a href="./index.html" >Home</a></div>
@@ -119,6 +123,10 @@ class Footer extends HTMLElement {
         </tr>
 
       </table>
+    </div>
+
+    <div class="copyright">
+      © 2006 Milco Private Limited. All Rights Reserved © 2008
     </div>
 
   </footer>

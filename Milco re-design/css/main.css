@@ -1,6 +1,7 @@
 :root {
   --muted: #dddddd;
   --hblue: #1b3d96;
+  --red: #ed2024;
 }
 
 body {
@@ -22,7 +23,7 @@ body {
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 2rem;
-  margin: 3rem 0 1rem 0;
+  margin: 10rem 0 0 0;
   font-size: small;
 }
 
@@ -42,7 +43,7 @@ body {
 }
 
 .bottom-nav {
-  inset-inline-start: 5rem;
+  justify-self: center;
   position: relative;
   margin-top: 1rem;
   display: flex;
@@ -53,6 +54,24 @@ body {
 .bottom-nav>div>a {
   text-decoration: none;
   color: black;
+}
+
+.footer-map{
+  width:100%;
+  height: 100%;
+  border:none;
+  border-radius:8px;
+  padding-left: 2rem;
+}
+
+.copyright{
+  grid-column: 1 / span 3;
+  text-align:center;
+  margin-top: 2rem;
+  background: var(--red);
+  color: #fafafa;
+  height:2rem;
+  padding-top:1rem;
 }
 
 .navbar-ul {
@@ -67,7 +86,7 @@ body {
 
 .nav-link {
   text-decoration: none;
-  color: #ed2024;
+  color: var(--red);
   margin: 0rem 1rem 0rem 0rem;
   font-weight: 600;
 }
@@ -88,6 +107,7 @@ body {
     rgba(17, 17, 26, 0.05) 0px 8px 32px;
   border-radius: 8px;
   padding: 1rem;
+  width: 50rem;
 }
 
 .home-cards{
@@ -148,7 +168,6 @@ body {
   justify-self: center;
   border: 0.5px solid rgb(209, 209, 209);
   border-top: none;
-  border-radius: 0 0 10px 10px ;
 }
 
 .prod-dropdown li {
