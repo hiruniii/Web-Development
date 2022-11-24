@@ -11,10 +11,10 @@ body {
 
 .navbar-light {
   background-color: transparent;
-  height: 80px;
+  height: 40px; 
   width: 100%;
   vertical-align: middle;
-  margin: 2.5rem 0.3rem 1rem 1rem;
+  margin: 2.5rem 0.3rem 0rem 1rem;
 }
 
 .footer {
@@ -166,8 +166,7 @@ body {
   padding: 0;
   background:white;
   justify-self: center;
-  border: 0.5px solid rgb(209, 209, 209);
-  border-top: none;
+  border: none;
 }
 
 .prod-dropdown li {
