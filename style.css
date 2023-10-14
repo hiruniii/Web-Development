@@ -1,0 +1,14 @@
+.card{
+    height:20vh;
+    overflow:scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    transition-duration:1s;
+    transition-delay:0.1s;
+    }
+    .card::-webkit-scrollbar {
+        display: none;  /* Safari and Chrome */
+    }
+.card:hover{
+    transform:scale(1.1);
+}
